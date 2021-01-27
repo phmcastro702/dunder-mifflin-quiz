@@ -4,7 +4,7 @@ import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import MyHead from '../src/components/Head'
+import MyHead from '../src/components/MyHead'
 
 // const Title = styled.h1`
 //   font-size: 50px;
@@ -33,8 +33,8 @@ const QuizContainer = styled.div`
 export default function Home() {
 
   return (
-    <div>
-      <MyHead />
+    <>
+      <MyHead previewImageURL={db.bg} />
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <Widget>
@@ -56,7 +56,7 @@ export default function Home() {
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/phmcastro702" />
       </QuizBackground>
-    </div>
+    </>
   );
 
 }
