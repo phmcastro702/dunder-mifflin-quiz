@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-export default function Head({ previewImageURL }) {
+export default function MyHead({ previewImageURL }) {
     return (
         <Head>
             <meta property="og:title" content="The Office's Dunder Mifflin Quiz" />
