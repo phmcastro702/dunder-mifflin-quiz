@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <MyHead previewImageURL={db.bg} />
+      <MyHead previewImageURL={db.previewGif} />
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <Widget>
