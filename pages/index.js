@@ -1,10 +1,12 @@
+import React from 'react';
+
 import styled from 'styled-components';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import MyHead from '../src/components/MyHead'
+import MyHead from '../src/components/MyHead';
 
 // const Title = styled.h1`
 //   font-size: 50px;
@@ -29,9 +31,7 @@ const QuizContainer = styled.div`
   }
 `;
 
-
 export default function Home() {
-
   return (
     <>
       <MyHead previewImageURL={db.previewGif} />
@@ -39,7 +39,7 @@ export default function Home() {
         <QuizContainer>
           <Widget>
             <Widget.Header>
-              <h1>sometimes i'll start a sentence</h1>
+              <h1>sometimes i‘ll start a sentence</h1>
             </Widget.Header>
             <Widget.Content>
               <p>lorem ipsum dolor sit amet...</p>
@@ -58,5 +58,4 @@ export default function Home() {
       </QuizBackground>
     </>
   );
-
 }
